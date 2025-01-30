@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departmental Time Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 20%;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .abbreviations {
+            margin-bottom: 30px;
+        }
+
+        .abbreviations h3 {
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+
+        .abbreviations .line {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px; /* Adjust spacing between subject and name */
+            margin-bottom: 5px;
+        }
+
+        .signatures {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .signature {
+            flex: 1;
+        }
+  
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>DEPARTMENT OF ARTIFICIAL INTELLIGENCE</h2>
+        <p><h3>SESSION: 2024 - 2025</h3></p>
+        <p><I><U><h3>DEPARTMENTAL TIME TABLE</h3></U></I></p>
+        <p><U><h3>W.E.F: 08/01/2025</h3></U></p>
+        <div style="width: 100;"><span style="float: left;"><p><h3>IV SEM</h3></p></span></div>
+        <span style="float: right;"><h3>Room No.: ASF 203</h3></span>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>I</th>
+                <th>II</th>
+                <th>III</th>
+                <th rowspan="2">1:15-2:00</th>
+                <th>IV</th>
+                <th>V</th>
+                <th>VI</th>
+            </tr>
+            <tr><th>TIME</th>
+                <th>10:15-11:15</th>
+                <th>11:15-12:15</th>
+                <th>12:15-1:15</th>
+                <th>2:00-3:00</th>
+                <th>3:00-4:00</th>
+                <th>4:00-5:00</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            
+            <tr>
+                <th>MON</th>
+                <td>CAO<br>DBN</td>
+                <td colspan="2">B1/PP/OOPL/SRK<BR>B2/CWS-1/DBMSL/PBA</td>
+                <th rowspan="6"><h2>R<br>E<br>C<br>E<br>S<br>S</h2></th>
+                <td>TOC<br>PBA</td>
+                <td>NPTEL<br>PPN</td>
+                <td>Library</td>
+            </tr>
+            <tr>
+                <th>TUE</th>
+                <td colspan="2">B2/PP/OOPL/SRK<br>B1/CWS-1/DBMSL/PBA</td>
+                <td>MDM</td>
+                <td>AEC-ETC<br>PS</td>
+                <td>Techincal <br>Exposure<br>TSP</td>
+                <td>Library</td>
+            </tr>
+            <tr>
+                <th>WED</th>
+                <td>EDM<br>AM</td>
+                <td>PP<br>SRK</td>
+                <td>MDM</td>
+                <td>CAO<br>DBN</td>
+                <td>DTS<br>PVR</td>
+                <td>Library</td>
+            </tr>
+            <tr>
+                <th>THUR</th>
+                <td>TOC<br>PBA</td>
+                <td>PP<br>SRK</td>
+                <td>Open<BR>Elective</td>
+                <td>CAO<br>DBN</td>
+                <td>NPTEL<br>SPT</td>
+                <td>Library</td>
+            </tr>
+            <tr>
+                <tH>FRI</tH>
+                <td>DTS<BR>PVR</td>
+                <td>TOC<BR>PBA</BR></td>
+                <td>Open<BR>Elective</td>
+                <td>AEC-ETC<br>PS</td>
+                <td>PP<BR>SRK</td>
+                <td>EDM<BR>AM</td>
+            </tr>
+            <tr>
+                <th>SAT</th>
+                <td colspan="3">Technical Exposure</td>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+        
+            <div class="abbreviations">
+                <h3>Abbreviations:</h3>
+                <div class="line">
+                    <span>PP - Python Programming                               </span>
+                    <span>SRK - Er. S. R. Kolte</span>
+                </div>
+                <div class="line">
+                    <span>PP Lab - Python Programming Lab                         </span>
+                    <span>SRK - Er. S. R. Kolte</span>
+                </div>
+                <div class="line">
+                    <span>CAO - Computer Architecture and Organization</span>
+                    <span>DBN - Er. D. B. Nimje</span>
+                </div>
+                <div class="line">
+                    <span>TOC - Theory of Computation</span>
+                    <span>PBA - Er. P. B. Aher</span>
+                </div>
+                <div class="line">
+                    <span>AEC-ETC - Ability Enhancement Course-Effective Technical Communication</span>
+                    <span>APS - Er. Pradnya Singh</span>
+                </div>
+                <div class="line">
+                    <span>EDM - Entrepreneurship Development Management</span>
+                    <span>AMS - Er. Avinash Sanagle</span>
+                </div>
+                <div class="line">
+                    <span>DTS - Digital and Technological Solution</span>
+                    <span>PVR - Er. P. V. Rathod</span>
+                </div>
+                <div class="line">
+                    <span>CWS-1 - Computer Workshop-1</span>
+                    <span>PBA - Er. P. B. Aher</span>
+                </div>
+                <div class="line">
+                    <span>NPTEL - NPTEL</span>
+                    <span>EST - Er. S. T. Pete</span>
+                </div>
+                <div class="line">
+                    <span>TE - Technical Exposure</span>
+                    <span>TSP - Er. T. S. Palorkar</span>
+                </div>
+            </div>
+        
+            <div class="signatures">
+                <div class="signature">
+                    <p>Er. A. R. Deokate</p>
+                    <p>Time-Table Co-Incharge</p>
+                </div>
+                <div class="signature">
+                    <p>Er. P. B. Aher</p>
+                    <p>Time-Table Incharge</p>
+                </div>
+                <div class="signature">
+                    <p>Mr. B. S. Dhak</p>
+                    <p>HOD AI</p>
+                </div>
+            </div>
+                
+</body>
+</html>

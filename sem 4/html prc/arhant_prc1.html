@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departmental Time Table</title>
+    <style>
+        /* Global font size increase */
+        body {
+            font-size: 18px; /* Increased font size for the body */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Wrapper to narrow down the entire page */
+        .container {
+            width: 70%; /* Reduce width further */
+            margin: 0 auto; /* Center the content */
+        }
+
+        /* Style for inline display of the names */
+        .name-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .name-container p {
+            margin-right: 10px; /* Reduced margin between names */
+            margin-left: 10px;
+            font-size: 18px; /* Increased font size for names */
+        }
+
+        /* Ensure the table fits the narrowed container */
+        table {
+            width: 100%;
+            table-layout: fixed;
+            font-size: 20px; /* Increased font size for table text */
+        }
+
+        th, td {
+            font-size: 20px; /* Increased font size for table headers and data */
+            padding: 10px; /* Added padding for better readability */
+        }
+
+        /* Styling for abbreviations */
+        .abbreviations p {
+            display: inline-block;
+            width: 100%;
+            font-size: 18px; /* Increased font size for abbreviations */
+            margin-bottom: 2px; /* Reduced margin between abbreviations */
+        }
+
+        /* Make the abbreviations and descriptions inline, and center them */
+        .abbreviations p span {
+            display: inline-block;
+            text-align: center; /* Center the text inside the span */
+            width: 45%; /* Adjust the width as needed to fit content */
+        }
+
+        .abbreviations p span:nth-child(1) {
+            text-align: left; /* Align abbreviation to the left */
+        }
+
+        .abbreviations p span:nth-child(2) {
+            text-align: center; /* Align description to the center */
+        }
+
+        /* Reduce the line spacing for everything after abbreviations */
+        .container > div {
+            margin-top: 2px;  /* Further reduce space between sections */
+            margin-bottom: 2px; /* Further reduce space between sections */
+        }
+
+        .container > div p {
+            margin-bottom: 3px; /* Further reduce margin for paragraphs */
+        }
+
+        .name-container p {
+            margin-bottom: 3px; /* Further reduce space between names */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2 style="text-align: center;">DEPARTMENT OF ARTIFICIAL INTELLIGENCE</h2>
+            <h3 style="text-align: center;">SESSION: 2024 - 2025</h3>
+            <h3 style="text-align: center;">DEPARTMENTAL TIME TABLE</h3>
+            <h3 style="text-align: center;">W.E.F: 08/01/2025</h3>
+            <div>
+                <p style="float: left;"><b>IV SEM</b></p>
+                <p style="float: right;"><b>Room No.: ASF 203</b></p>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+
+        <table border="1" align="center">
+            <thead>
+                <tr>
+                    <th align="center">Day</th>
+                    <th align="center">I</th>
+                    <th align="center">II</th>
+                    <th align="center">III</th>
+                    <th align="center" rowspan="2" width="5%">1:15-2:00</th> <!-- No change here -->
+                    <th align="center">IV</th>
+                    <th align="center">V</th>
+                    <th align="center">VI</th>
+                </tr>
+                <tr>
+                    <th align="center">TIME</th>
+                    <th align="center">10:15-11:15</th>
+                    <th align="center">11:15-12:15</th>
+                    <th align="center">12:15-1:15</th>
+                    <th align="center">2:00-3:00</th>
+                    <th align="center">3:00-4:00</th>
+                    <th align="center">4:00-5:00</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th align="center">MON</th>
+                    <td align="center">CAO<br>DBN</td>
+                    <td align="center" colspan="2">B1/PP/OOPL/SRK<br>B2/CWS-1/DBMSL/PBA</td>
+                    <td align="center" rowspan="6" class="vertical-text">RECESS</td> <!-- Fixed vertical text -->
+                    <td align="center">TOC<br>PBA</td>
+                    <td align="center">NPTEL<br>PPN</td>
+                    <td align="center">Library</td>
+                </tr>
+                <tr>
+                    <th align="center">TUE</th>
+                    <td align="center" colspan="2">B2/PP/OOPL/SRK<br>B1/CWS-1/DBMSL/PBA</td>
+                    <td align="center">MDM</td>
+                    <td align="center">AEC-ETC<br>PS</td>
+                    <td align="center">Technical<br>Exposure<br>TSP</td>
+                    <td align="center">Library</td>
+                </tr>
+                <tr>
+                    <th align="center">WED</th>
+                    <td align="center">EDM<br>AM</td>
+                    <td align="center">PP<br>SRK</td>
+                    <td align="center">MDM</td>
+                    <td align="center">CAO<br>DBN</td>
+                    <td align="center">DTS<br>PVR</td>
+                    <td align="center">Library</td>
+                </tr>
+                <tr>
+                    <th align="center">THUR</th>
+                    <td align="center">TOC<br>PBA</td>
+                    <td align="center">PP<br>SRK</td>
+                    <td align="center">Open<br>Elective</td>
+                    <td align="center">CAO<br>DBN</td>
+                    <td align="center">NPTEL<br>SPT</td>
+                    <td align="center">Library</td>
+                </tr>
+                <tr>
+                    <th align="center">FRI</th>
+                    <td align="center">DTS<br>PVR</td>
+                    <td align="center">TOC<br>PBA</td>
+                    <td align="center">Open<br>Elective</td>
+                    <td align="center">AEC-ETC<br>PS</td>
+                    <td align="center">PP<br>SRK</td>
+                    <td align="center">EDM<br>AM</td>
+                </tr>
+                <tr>
+                    <th align="center">SAT</th>
+                    <td align="center" colspan="3">Technical Exposure</td>
+                    <td align="center" colspan="2"></td>
+                    <td align="center"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>
+            <h3>Abbreviations:</h3>
+            <div class="abbreviations">
+                <p><span>PP - Python Programming</span><span>SRK - Er. S. R. Kolte</span></p>
+                <p><span>PP Lab - Python Programming Lab</span><span>SRK - Er. S. R. Kolte</span></p>
+                <p><span>CAO - Computer Architecture and Organization</span><span>DBN - Er. D. B. Nimje</span></p>
+                <p><span>TOC - Theory of Computation</span><span>PBA - Er. P. B. Aher</span></p>
+                <p><span>AEC-ETC - Ability Enhancement Course-Effective Technical Communication</span><span>APS - Er. Pradnya Singh</span></p>
+                <p><span>EDM - Entrepreneurship Development Management</span><span>AMS - Er. Avinash Sanagle</span></p>
+                <p><span>DTS - Digital and Technological Solution</span><span>PVR - Er. P. V. Rathod</span></p>
+                <p><span>CWS-1 - Computer Workshop-1</span><span>PBA - Er. P. B. Aher</span></p>
+                <p><span>NPTEL - NPTEL</span><span>EST - Er. S. T. Pete</span></p>
+                <p><span>TE - Technical Exposure</span><span>TSP - Er. T. S. Palorkar</span></p>
+            </div>
+        </div>
+
+        <div class="name-container">
+            <p>Er. A. R. Deokate<br>Time-Table Co-Incharge</p>
+            <p>Er. P. B. Aher<br>Time-Table Incharge</p>
+            <p>Mr. B. S. Dhak<br>HOD AI</p>
+        </div>
+    </div>
+</body>
+</html>
