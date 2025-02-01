@@ -19,7 +19,8 @@
             background: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 400px;
+            width: 90%;
+            max-width: 400px;
             padding: 20px;
         }
         .registration-form h1 {
@@ -35,13 +36,13 @@
             margin-bottom: 5px;
             font-weight: bold;
         }
-        .form-group input, .form-group select,
- .form-group textarea {
+        .form-group input, .form-group select, .form-group textarea {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
             box-sizing: border-box;
+            cursor: pointer;
         }
         .form-group textarea {
             resize: none;
@@ -59,26 +60,29 @@
         .form-group button:hover {
             background-color: #0056b3;
         }
+        @media (max-width: 480px) {
+            .registration-form {
+                width: 95%;
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="registration-form">
         <h1>Tarang 2k25 Registration</h1>
-        <form action="#" method="POST">
+        <form action="arhant_prc2b.html" method="POST">
             <div class="form-group">
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name"
- placeholder="Enter your full name" required>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required style="text-transform: capitalize;">
             </div>
             <div class="form-group">
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email"
- placeholder="Enter your email" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" 
-placeholder="Enter your phone number" required>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]{10}" title="Enter a 10-digit phone number">
             </div>
             <div class="form-group">
                 <label for="class">Select Class:</label>
@@ -113,8 +117,7 @@ placeholder="Enter your phone number" required>
             </div>
             <div class="form-group">
                 <label for="comments">Additional Comments:</label>
-                <textarea id="comments" name="comments" rows="4"
- placeholder="Enter any additional information"></textarea>
+                <textarea id="comments" name="comments" rows="4" placeholder="Enter any additional information"></textarea>
             </div>
             <div class="form-group">
                 <button type="submit">Register</button>
