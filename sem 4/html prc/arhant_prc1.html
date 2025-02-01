@@ -4,77 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Departmental Time Table</title>
-    <style>
-        /* Global font size increase */
+    <style>
         body {
-            font-size: 18px; /* Increased font size for the body */
+            font-size: 18px; 
             font-family: Arial, sans-serif;
         }
 
-        /* Wrapper to narrow down the entire page */
+        
         .container {
-            width: 70%; /* Reduce width further */
+            width: 70%; 
             margin: 0 auto; /* Center the content */
         }
-
-        /* Style for inline display of the names */
+       
         .name-container {
             display: flex;
             justify-content: space-between;
         }
         .name-container p {
-            margin-right: 10px; /* Reduced margin between names */
+            margin-right: 10px; 
             margin-left: 10px;
-            font-size: 18px; /* Increased font size for names */
+            font-size: 18px; 
         }
 
-        /* Ensure the table fits the narrowed container */
+        
         table {
             width: 100%;
             table-layout: fixed;
-            font-size: 20px; /* Increased font size for table text */
+            font-size: 20px; 
         }
 
         th, td {
-            font-size: 20px; /* Increased font size for table headers and data */
-            padding: 10px; /* Added padding for better readability */
+            font-size: 20px; 
+            padding: 10px; 
         }
 
-        /* Styling for abbreviations */
+        
         .abbreviations p {
             display: inline-block;
             width: 100%;
-            font-size: 18px; /* Increased font size for abbreviations */
-            margin-bottom: 2px; /* Reduced margin between abbreviations */
+            font-size: 18px; 
+            margin-bottom: 2px; 
         }
 
-        /* Make the abbreviations and descriptions inline, and center them */
+        
         .abbreviations p span {
             display: inline-block;
-            text-align: center; /* Center the text inside the span */
-            width: 45%; /* Adjust the width as needed to fit content */
+            text-align: center; 
+            width: 45%; 
         }
 
         .abbreviations p span:nth-child(1) {
-            text-align: left; /* Align abbreviation to the left */
+            text-align: left; 
         }
 
         .abbreviations p span:nth-child(2) {
-            text-align: center; /* Align description to the center */
+            text-align: center; 
         }
 
-        /* Reduce the line spacing for everything after abbreviations */
+        
         .container > div {
-            margin-top: 2px;  /* Further reduce space between sections */
-            margin-bottom: 2px; /* Further reduce space between sections */
+            margin-top: 2px;  
         }
 
         .container > div p {
-            margin-bottom: 3px; /* Further reduce margin for paragraphs */
+            margin-bottom: 3px; 
         }
 
         .name-container p {
-            margin-bottom: 3px; /* Further reduce space between names */
+            margin-bottom: 3px; 
         }
     </style>
 </head>
