@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('/api/placeholder/1200/600');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+        .service-card {
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+        .contact-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-card h3 {
+            color: #343a40;
+        }
+        .contact-card p {
+            font-size: 1.1rem;
+        }
+        .contact-card a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #fff;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Event Management</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Welcome to Our Event Management Services</h1>
+                    <p class="lead mb-4">We organize unforgettable events with a personal touch</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="h5 mb-3">Wedding Planning</h3>
+                            <p class="card-text">We help create the perfect day for you, from the venue to the decorations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="h5 mb-3">Corporate Events</h3>
+                            <p class="card-text">Organizing successful conferences, meetings, and team-building events.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="h5 mb-3">Private Parties</h3>
+                            <p class="card-text">Custom event planning for private parties, birthdays, and anniversaries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">About Us</h2>
+            <p>We are a dedicated team of event planners with years of experience in creating memorable events for our clients. Whether you're planning a wedding, corporate event, or private party, we are here to help you execute your vision with style and precision. Our services are personalized to meet your specific needs, ensuring that every detail is taken care of. Let us make your event truly unforgettable.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="contact-card">
+                        <h3>Get In Touch</h3>
+                        <p><strong>Name:</strong> Arhant < strong ></strong></p>
+                        <p><strong>Contact Number:</strong>1234567890</p>
+                        <p><strong>Email:</strong> <a href="mailto:arhantqwe@gmail.com">arhantqwe@gmail.com</a></p>
+                        <p><strong>Instagram:</strong> <a href="https://www.instagram.com" target="_blank">@your_instagram_handle</a></p>
+                        <p><strong>Telegram:</strong> <a href="https://t.me/your_telegram_handle" target="_blank">@your_telegram_handle</a></p>
+                        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">your-linkedin</a></p>
+                        <p><strong>GitHub:</strong> <a href="https://github.com/arhantkamble" target="_blank">arhantkamble</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Event Management. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
